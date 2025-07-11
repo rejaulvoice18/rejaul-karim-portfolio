@@ -25,26 +25,29 @@ const AboutMe = () => {
                             to open-source projects, and sharing knowledge within the developer
                             community.
                         </p>
-                        <div className='flex gap-3'>
+                        <div className='flex gap-3 flex-wrap'>
                             <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>TypeScript</button>
                             <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>JavaScript</button>
-                            <button>React</button>
-                            <button>Next.js</button>
-                            <button>Tailwind CSS</button>
-                            <button>GraphQL</button>
-                            <button>Git</button>
-                            <button>WordPress</button>
-                            <button>Figma</button>
-                            <button>Web Performance</button>
-                            <button>API Integration</button>
-                            <button>Responsive Design</button>
-                            <button>Cross-Browser Compatibility</button>
-                            <button>Firebase</button>
-                            <button>SQL</button>
-                            <button>MySQL</button>
-                            <button>Node.js</button>
-                            <button>Express.js</button>
-                            <button>MongoDB</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>React</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Next.js</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Tailwind CSS</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>GraphQL</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Git</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>WordPress</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Figma</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Web Performance</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>API Integration</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Responsive Design</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Cross-Browser Compatibility</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Firebase</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>SQL</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MySQL</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Node.js</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Express.js</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MongoDB</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>PHP</button>
+                            <button className='btn btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>C</button>
+
                         </div>
                     </div>
                     <div>
