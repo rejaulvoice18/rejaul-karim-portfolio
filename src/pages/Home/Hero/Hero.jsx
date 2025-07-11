@@ -8,7 +8,7 @@ import { TbBrain } from 'react-icons/tb';
 const Hero = () => {
     return (
         <div className='bg-black/20 min-h-screen'>
-            <section className='max-w-5xl mx-auto min-h-screen flex items-center justify-center px-4'>
+            <section className='max-w-screen-xl mx-auto min-h-screen flex items-center justify-center px-4'>
                 <div className='flex-col justify-items-center items-center mx-auto text-center space-y-4 md:space-y-8'>
                     <div className='flex items-center gap-1 py-3 px-5 bg-black/30 rounded-lg'>
                         <span className='text-yellow-600'><PiHandWaving size={22}></PiHandWaving></span>
