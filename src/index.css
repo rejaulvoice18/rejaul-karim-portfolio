@@ -1,6 +1,27 @@
 
-body{
-    background-color: 'bg-gradient-to-b from-[#0f0c29] via-[#302b63] to-[#24243e]'
-}
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+.my-progress::-webkit-progress-value{
+    background-color: #3178C6;
+}
+.my-progress::-moz-progress-bar{
+    background-color: #3178C6;
+}
+
+.my-progress-text::-webkit-progress-value{
+    color: #3178C6;
+}
+.my-progress-text::-moz-progress-bar{
+    color: #3178C6;
+}
+/* progress color for worpress */
+
+
+.my-progress-w::-webkit-progress-value{
+    background-color: #21759B;
+}
+.my-progress-w::-moz-progress-bar{
+    background-color: #21759B;
+}
