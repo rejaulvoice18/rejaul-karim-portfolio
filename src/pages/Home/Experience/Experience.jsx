@@ -1,10 +1,23 @@
 import React from 'react';
+import SectionTitle from '../../../components/SectionTitle';
+import ExperienceTimeline from '../../../components/ExperienceTimeline';
+
+
 
 const Experience = () => {
     return (
-        <div>
-            
-        </div>
+        <section className='bg-black/20'>
+            <div className='py-14'>
+                <SectionTitle
+                    heading={"Experience"}
+                    body={"Throughout my journey in frontend development, I've contributed to meaningful projects that demonstrate both my skills and passion."}
+                />
+                <div>
+                    <ExperienceTimeline>
+                    </ExperienceTimeline>
+                </div>
+            </div>
+        </section>
     );
 };
 

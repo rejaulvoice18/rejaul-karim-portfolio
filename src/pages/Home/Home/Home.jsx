@@ -4,6 +4,7 @@ import Animate from '../Animate/Animate';
 // import He from '../He/He';
 import Hero from '../Hero/Hero';
 import AboutMe from '../AboutMe/AboutMe';
+import Experience from '../Experience/Experience';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
         <div>
             <Hero />
             <AboutMe />
+            <Experience />
             {/* <He /> */}
             {/* <Heo /> */}
             {/* <Animate /> */}

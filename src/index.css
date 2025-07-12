@@ -3,6 +3,17 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Used ths to override contentArrowStyle */
+.vertical-timeline-element-content::before {
+    display: none !important;
+    border-style: none !important;
+    content: none !important;
+  }
+  
+  .vertical-timeline-element.vertical-timeline-element--work .vertical-timeline-element-content::before {
+    display: none !important;
+  }
+
 .my-progress::-webkit-progress-value{
     background-color: #3178C6;
 }
@@ -25,3 +36,22 @@
 .my-progress-w::-moz-progress-bar{
     background-color: #21759B;
 }
+
+/* Vertical Timeline line color */
+/* Custom vertical gradient line for timeline */
+.gradient-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px; /* This aligns the gradient line with the timeline dots */
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ec4899, #8b5cf6); /* from pink-500 to purple-500 */
+    z-index: 0;
+  }
+
+  
+  
+  
+  
+  

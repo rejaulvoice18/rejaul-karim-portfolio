@@ -4,16 +4,16 @@ import { HiMiniCodeBracket } from 'react-icons/hi2';
 import { MdOutlineIntegrationInstructions } from 'react-icons/md';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandJavascript, TbBrandNextjs, TbBrandTypescript, TbWorldWww } from 'react-icons/tb';
+import SectionTitle from '../../../components/SectionTitle';
 
 const AboutMe = () => {
     return (
         <section className='pt-20 bg-gray-800/50'>
             <div className='max-w-screen-xl mx-auto space-y-10 px-3'>
-                <div className='flex-col justify-center text-center w-3/6 mx-auto space-y-3'>
-                    <h2 className='text-white text-2xl md:text-4xl font-bold'>About Me</h2>
-                    <p className='text-gray-400 text-[14px]'>Creative front-end developer with a strong sense of design
-                        and a passion for crafting engaging, user-friendly digital experiences.</p>
-                </div>
+               <SectionTitle
+                    heading={"About Me"}
+                    body={"Enthusiastic front-end developer with a strong design sense and a passion for crafting outstanding user experiences."}
+               />
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <div className='space-y-4'>
                         <h2 className='text-xl font-bold text-white'>Hi, I'm Rejaul Karim</h2>
