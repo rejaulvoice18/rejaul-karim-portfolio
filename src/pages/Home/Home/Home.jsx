@@ -5,6 +5,7 @@ import Animate from '../Animate/Animate';
 import Hero from '../Hero/Hero';
 import AboutMe from '../AboutMe/AboutMe';
 import Experience from '../Experience/Experience';
+import FeaturedProjects from '../FeaturedProjects/FeaturedProjects';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Hero />
             <AboutMe />
             <Experience />
+            <FeaturedProjects />
             {/* <He /> */}
             {/* <Heo /> */}
             {/* <Animate /> */}

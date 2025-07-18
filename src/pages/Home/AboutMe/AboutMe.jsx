@@ -52,6 +52,7 @@ const AboutMe = () => {
                             <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MongoDB</button>
                             <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>PHP</button>
                             <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Cross-Browser Compatibility</button>
+                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Framer Motion</button>
                         </div>
                     </div>
                     {/* Technical Skills */}

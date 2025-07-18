@@ -15,7 +15,7 @@ const ExperienceTimeline = () => {
                     className="vertical-timeline-element--work"
                     icon={<MdWork />}
                     iconStyle={{ background: '#6c63ff', color: '#fff' }}
-                    contentStyle={{ background: '#1f2937', color: '#fff', borderBottom: 'none', boxShadow: 'none' }}
+                    contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
                 >
                     <div className='space-y-2'>
                         <h3 className="font-bold text-white">Front-end Developer</h3>
@@ -43,7 +43,7 @@ const ExperienceTimeline = () => {
                     className="vertical-timeline-element--work"
                     icon={<MdWork />}
                     iconStyle={{ background: '#6c63ff', color: '#fff' }}
-                    contentStyle={{ background: '#1f2937', color: '#fff', borderBottom: 'none', boxShadow: 'none' }}
+                    contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
                 >
                     <div className='space-y-2'>
                         <h3 className="font-bold text-white">Front-end Developer</h3>
@@ -71,7 +71,7 @@ const ExperienceTimeline = () => {
                     className="vertical-timeline-element--work"
                     icon={<MdWork />}
                     iconStyle={{ background: '#6c63ff', color: '#fff' }}
-                    contentStyle={{ background: '#1f2937', color: '#fff', borderBottom: 'none', boxShadow: 'none' }}
+                    contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
                 >
                     <div className='space-y-2'>
                         <h3 className="font-bold text-white">Front-end Developer</h3>
@@ -99,7 +99,7 @@ const ExperienceTimeline = () => {
                     className="vertical-timeline-element--work"
                     icon={<MdWork />}
                     iconStyle={{ background: '#6c63ff', color: '#fff' }}
-                    contentStyle={{ background: '#1f2937', color: '#fff', borderBottom: 'none', boxShadow: 'none' }}
+                    contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
                 >
                     <div className='space-y-2'>
                         <h3 className="font-bold text-white">Front-end Developer</h3>
@@ -123,6 +123,7 @@ const ExperienceTimeline = () => {
                         </div>
                     </div>
                 </VerticalTimelineElement>
+              
             </VerticalTimeline>
 
         </div>
