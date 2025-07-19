@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectCard = ({ singlePro }) => {
     console.log("this is single item", singlePro)
-    const { projects_name, thumbnail, web, category, git_client, git_server, details, skills } = singlePro || [];
+    const { projects_name, thumbnail, web, category, git_client, git_server, details, skills, id } = singlePro || [];
     return (
 
         // Framer motion
@@ -19,7 +19,7 @@ const ProjectCard = ({ singlePro }) => {
             transition={{ duration: 0.3 }}
         >
             {/* Your ProjectCard JSX goes here */}
-            <div>
+            <Link to={`/project-details/${id}`}>
                 <div className='space-y-3 shadow-2xl shadow-black rounded-xl cursor-pointer'>
                     <div className='aspect-video relative overflow-hidden'>
                         <motion.img
@@ -28,7 +28,7 @@ const ProjectCard = ({ singlePro }) => {
                             whileHover={{ scale: 1.1 }}
                             transition={{ duration: 0.3 }}
                             alt="" />
-                        <div className='absolute bottom-0 space-y-2 bg-black/60 p-2'>
+                        <div className='absolute bottom-0 space-y-0.5 bg-black/60 p-1'>
                             <h5 className='text-white font-bold text-[12px]'>{projects_name}</h5>
                             <p className='text-white text-[10px]'>{details.slice(0, 90)}....
                             </p>
@@ -52,7 +52,7 @@ const ProjectCard = ({ singlePro }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </motion.div>
 
     );
