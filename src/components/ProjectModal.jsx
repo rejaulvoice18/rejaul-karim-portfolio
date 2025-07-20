@@ -6,12 +6,17 @@ import { MdOutlinePreview } from "react-icons/md";
 const ProjectModal = ({ project, onClose }) => {
     const { thumbnail, projects_name, details, skills, git_client, git_server, web } = project;
     return (
-        <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
+        <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4" style={{
+                                boxShadow: `0 0 60px 5px rgba(255, 115, 0, 0.4), 0 0 150px 30px rgba(148, 0, 211, 0.2)`
+                            }}>
             <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 className="bg-[#1f1f1f] text-white p-6 rounded-2xl w-full max-w-3xl relative shadow-lg"
+                style={{
+                    boxShadow: `0 0 60px 5px rgba(255, 115, 0, 0.4), 0 0 150px 30px rgba(148, 0, 211, 0.2)`
+                }}
             >
                 {/* Header: Title and Close Button */}
                 <div className="flex items-center justify-between mb-4">
