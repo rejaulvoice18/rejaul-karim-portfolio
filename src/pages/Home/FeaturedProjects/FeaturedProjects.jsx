@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import SectionTitle from '../../../components/SectionTitle';
 import ProjectCard from '../../../components/ProjectCard';
 import { motion, AnimatePresence } from "framer-motion";
+import ProjectModal from '../../../components/ProjectModal';
 
 
 const FeaturedProjects = () => {
@@ -53,6 +54,10 @@ const FeaturedProjects = () => {
         }
     ]
 
+    // This usestate for Modal purpose 
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    // This useState for Menu
     const [selectedCategory, setSelectedCategory] = useState('all');
 
     const categories = [
@@ -85,7 +90,7 @@ const FeaturedProjects = () => {
                             <button
                                 key={cat.value}
                                 onClick={() => setSelectedCategory(cat.value)}
-                                className={`px-4 py-2 rounded-md shadow-md text-sm font-medium transition-transform duration-300 ${selectedCategory === cat.value
+                                className={`px-4 py-2 cursor-pointer rounded-md shadow-md text-sm font-medium transition-transform duration-300 ${selectedCategory === cat.value
                                     ? 'bg-gradient-to-r from-pink-600 to-purple-700 text-white scale-105'
                                     : 'bg-gray-300 text-gray-800 hover:scale-105'
                                     }`}
@@ -99,10 +104,22 @@ const FeaturedProjects = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                     <AnimatePresence mode='wait'>
                         {getFilteredProjects().map(singlePro => (
-                            <ProjectCard key={singlePro.id} singlePro={singlePro} />
+                            <ProjectCard 
+                            key={singlePro.id} 
+                            singlePro={singlePro} 
+                            onClick={() => setSelectedProject(singlePro)}
+                            />
                         ))}
                     </AnimatePresence>
                 </div>
+                {
+                    selectedProject && (
+                        <ProjectModal 
+                            project = {selectedProject}
+                            onClose={() => setSelectedProject(null)}
+                        />
+                    )
+                }
             </div>
             {/* <div>
                     <div className="min-h-screen flex items-center justify-center bg-black">

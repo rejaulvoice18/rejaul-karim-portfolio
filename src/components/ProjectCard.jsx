@@ -5,22 +5,24 @@ import { MdOutlinePreview } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
 
-const ProjectCard = ({ singlePro }) => {
+const ProjectCard = ({ singlePro, onClick }) => {
     console.log("this is single item", singlePro)
     const { projects_name, thumbnail, web, category, git_client, git_server, details, skills, id } = singlePro || [];
     return (
 
         // Framer motion
         <motion.div
+            onClick={onClick}
             key={projects_name}
+            className='cursor-pointer'
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.3 }}
         >
             {/* Your ProjectCard JSX goes here */}
-            <Link to={`/project-details/${id}`}>
-                <div className='space-y-3 shadow-2xl shadow-black rounded-xl cursor-pointer'>
+            <div>
+                <div className='space-y-3 shadow-2xl shadow-black rounded-xl'>
                     <div className='aspect-video relative overflow-hidden'>
                         <motion.img
                             className='transition-transform duration-300 ease-in-out transform hover:scale-110 w-full h-full object-cover rounded-t-xl'
@@ -52,7 +54,7 @@ const ProjectCard = ({ singlePro }) => {
                         </div>
                     </div>
                 </div>
-            </Link>
+            </div>
         </motion.div>
 
     );
