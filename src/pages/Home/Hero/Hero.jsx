@@ -17,7 +17,7 @@ const Hero = () => {
                         </h6>
                     </div>
                     <h1 className='text-4xl md:text-6xl text-white font-bold'>Front-end Developer</h1>
-                    <p className='text-gray-400 w-5/6 md:w-2/5'>I build interactive, visually polished web experiences using React,
+                    <p className='text-gray-400 w-5/6 md:w-2/5'>I build interactive, visually polished web experiences using React, JavaScript,
                         TypeScript, and modern frontend frameworks — blending clean design with efficient
                         code to deliver fast, user-friendly interfaces.</p>
                     <div className='flex flex-wrap justify-center items-center gap-3 md:gap-8 px-2 md:px-0'>

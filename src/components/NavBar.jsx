@@ -14,7 +14,7 @@ const NavBar = () => {
         <>
             <div className="fixed top-0 left-0 w-full z-50">
                 {/* This wraps and centers the navbar content */}
-                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-black/20 backdrop-blur-md text-white" style={{ borderRadius: '0 0 10px 10px' }}>
+                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-black/20 backdrop-blur-md text-white shadow-md" style={{ borderRadius: '0 0 10px 10px' }}>
                     <div className="navbar-start">
                         <a className="btn btn-ghost text-xl">Rejaul Karim</a>
                     </div>
