@@ -3,6 +3,8 @@ import AboutMe from '../AboutMe/AboutMe';
 import Experience from '../Experience/Experience';
 import FeaturedProjects from '../FeaturedProjects/FeaturedProjects';
 import WorkTogether from '../WorkTogether/WorkTogether';
+import Footer from '../Footer/Footer';
+
 
 
 const Home = () => {
@@ -13,6 +15,7 @@ const Home = () => {
             <Experience />
             <FeaturedProjects />
             <WorkTogether />
+            <Footer />
         </div>
     );
 };

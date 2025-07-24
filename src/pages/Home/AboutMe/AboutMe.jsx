@@ -17,46 +17,46 @@ const AboutMe = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <div className='space-y-4'>
                         <h2 className='text-xl font-bold text-white'>Hi, I'm Rejaul Karim</h2>
-                        <p className='text-gray-400 text-[14px]'>I bring over 4 years of front-end development experience,
+                        <p className='text-gray-400 text-[13px]'>I bring over 4 years of front-end development experience,
                             focusing on building modern, responsive web applications
                             that are not only visually impressive but also provide outstanding
                             user experiences. My journey began with a simple curiosity about
                             how websites function, which has since grown into a passion for
                             crafting impactful digital solutions.</p>
-                        <p className='text-gray-400 text-[14px]'>
+                        <p className='text-gray-400 text-[13px]'>
                             I prioritize writing clean, maintainable code and continuously
                             keep up with the latest technologies and industry best practices.
                             Beyond coding, I enjoy exploring new design trends, contributing
                             to open-source projects, and sharing knowledge within the developer
                             community.
                         </p>
-                        <div className='flex gap-3 flex-wrap'>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>TypeScript</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>JavaScript</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>React</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Next.js</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Tailwind CSS</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>GraphQL</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Git</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>WordPress</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Figma</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Web Performance</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>API Integration</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Responsive Design</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Firebase</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>C</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>SQL</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MySQL</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Node.js</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Express.js</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MongoDB</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>PHP</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Cross-Browser Compatibility</button>
-                            <button className='btn h-[30px] btn-outline text-xs bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Framer Motion</button>
+                        <div className='flex gap-2 flex-wrap'>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>TypeScript</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>JavaScript</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>React</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Next.js</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Tailwind CSS</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>GraphQL</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Git</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>WordPress</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Figma</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Web Performance</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>API Integration</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Responsive Design</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Firebase</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>C</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>SQL</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MySQL</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Node.js</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Express.js</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>MongoDB</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>PHP</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Cross-Browser Compatibility</button>
+                            <button className='btn h-[25px] btn-outline text-[10px] bg-gray-700 rounded-3xl text-gray-300 border-0 hover:shadow-none'>Framer Motion</button>
                         </div>
                     </div>
                     {/* Technical Skills */}
-                    <div className=''>
+                    <div className='space-y-0.5'>
                         <h2 className='text-xl font-bold text-white mb-5'>Technical Skills</h2>
                         <div>
                             <div className='flex justify-between w-full'>

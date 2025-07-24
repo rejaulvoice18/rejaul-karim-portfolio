@@ -7,6 +7,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 const WorkTogether = () => {
+  
     return (
         <section className='bg-black/20 py-20'>
             <div className='max-w-screen-xl mx-auto px-3'>
@@ -14,6 +15,7 @@ const WorkTogether = () => {
                     heading={"Let's Work Together"}
                     body={"Thinking about a new project? I’d be glad to hear more and explore how we can bring it to life together."}
                 />
+                {/* Message send section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'>
                     <div className='bg-black/50 p-4 rounded-md space-y-3'>
                         <h3 className='text-white'>Send me a message</h3>
@@ -42,6 +44,7 @@ const WorkTogether = () => {
                         <p className='text-gray-400 text-[10px] py-3'>I'm always open to new opportunities and exciting
                             projects. Whether you have a question, an idea,
                             or just want to say hello — I’ll be happy to hear from you and respond as soon as I can!</p>
+                        {/* phone number, email and location */}
                         <div className='flex flex-col gap-3 text-white'>
                             <div className='flex gap-3 bg-black/50 p-3 rounded-md hover:bg-gray-700'>
                                 <div className='flex p-2 bg-orange-500/20 rounded-md items-center justify-items-center'>
