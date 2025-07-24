@@ -53,7 +53,6 @@ const FeaturedProjects = () => {
             category: 'fullstack'
         }
     ]
-
     // This usestate for Modal purpose 
     const [selectedProject, setSelectedProject] = useState(null);
 

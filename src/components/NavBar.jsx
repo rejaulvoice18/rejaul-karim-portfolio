@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom';
 import { FaTimes, FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 import { FiDownload } from 'react-icons/fi';
+import ThemeToggle from './ThemeToggle';
+
+
+
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const mobileNavRef = useRef(null);
+
+  
 
     // Close menu when clicking outside
     useEffect(() => {
@@ -44,7 +50,7 @@ const NavBar = () => {
         <>
             {/* Main Navbar */}
             <div className="fixed top-0 left-0 w-full z-50">
-                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-white/10 backdrop-blur-md text-white shadow-sm rounded-b-lg">
+                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-white/10 dark:bg-gray-900 backdrop-blur-md text-white shadow-sm rounded-b-lg">
                     <div className="navbar-start">
                         <div className='flex items-center gap-1'>
                             <img className='w-7 bg-gradient-to-r from-pink-600 to-purple-700 rounded-md' src={logo} alt="logo" />
@@ -72,6 +78,7 @@ const NavBar = () => {
                                         CV
                                     </Link>
                                 </div>
+                                <ThemeToggle />
                             </ul>
                         </div>
                         {/* Hamburger Icon for Mobile */}
