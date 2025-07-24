@@ -5,13 +5,12 @@ import { MdOutlineIntegrationInstructions } from 'react-icons/md';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandJavascript, TbBrandNextjs, TbBrandTypescript, TbWorldWww } from 'react-icons/tb';
 import SectionTitle from '../../../components/SectionTitle';
-import ThemeToggle from '../../../components/ThemeToggle';
+
 
 const AboutMe = () => {
     return (
         <section className='pt-20 bg-gray-800/50 dark:bg-black'>
             <div className='max-w-screen-xl mx-auto space-y-10 px-3'>
-                <ThemeToggle />
                <SectionTitle
                     heading={"About Me"}
                     body={"Enthusiastic front-end developer with a strong design sense and a passion for crafting outstanding user experiences."}

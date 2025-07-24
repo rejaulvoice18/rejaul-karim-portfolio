@@ -11,12 +11,6 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <div>
-                
-            </div>
-            <button onClick={() => document.documentElement.classList.toggle('dark')}>
-                Toggle Dark
-            </button>
             <AboutMe />
             <Experience />
             <FeaturedProjects />
