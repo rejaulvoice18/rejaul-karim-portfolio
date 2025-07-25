@@ -50,11 +50,11 @@ const NavBar = () => {
         <>
             {/* Main Navbar */}
             <div className="fixed top-0 left-0 w-full z-50">
-                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-white/10 dark:bg-gray-900 backdrop-blur-md text-white shadow-sm rounded-b-lg">
+                <div className="navbar max-w-screen-xl mx-auto w-full px-4 bg-white dark:bg-white/10  backdrop-blur-md text-black dark:text-white shadow-sm rounded-b-lg">
                     <div className="navbar-start">
                         <div className='flex items-center gap-1'>
                             <img className='w-7 bg-gradient-to-r from-pink-600 to-purple-700 rounded-md' src={logo} alt="logo" />
-                            <h3 className='text-white'>Md Rejaul Karim</h3>
+                            <h3 className='text-black dark:text-white'>Md Rejaul Karim</h3>
                         </div>
                     </div>
 
@@ -96,13 +96,13 @@ const NavBar = () => {
             {/* Mobile Sidebar */}
             <div
                 ref={mobileNavRef}
-                className={`fixed top-0 right-0 w-1/2 h-full bg-[#0f0f0f] text-white z-50 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                className={`fixed top-0 right-0 w-1/2 h-full text-black bg-gray-300 dark:bg-[#0f0f0f] dark:text-white z-50 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-6 flex flex-col h-full justify-between">
                     {/* Header */}
                     <div className="flex justify-between items-center">
                         <div className='flex items-center gap-1'>
                             <img className='w-7 bg-gradient-to-r from-pink-600 to-purple-700 rounded-md' src={logo} alt="logo" />
-                            <h3 className='text-white'>Md Rejaul Karim</h3>
+                            <h3 className='text-black dark:text-white'>Md Rejaul Karim</h3>
                         </div>
                         <button onClick={() => setIsOpen(false)}>
                             <FaTimes className="text-2xl text-red-400 cursor-pointer" />

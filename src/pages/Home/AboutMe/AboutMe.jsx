@@ -9,7 +9,7 @@ import SectionTitle from '../../../components/SectionTitle';
 
 const AboutMe = () => {
     return (
-        <section className='pt-20 bg-gray-800/50 dark:bg-black'>
+        <section className='pt-20 bg-white dark:bg-black'>
             <div className='max-w-screen-xl mx-auto space-y-10 px-3'>
                <SectionTitle
                     heading={"About Me"}
@@ -17,14 +17,14 @@ const AboutMe = () => {
                />
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                     <div className='space-y-4'>
-                        <h2 className='text-xl font-bold text-white'>Hi, I'm Rejaul Karim</h2>
-                        <p className='text-gray-400 text-[13px]'>I bring over 4 years of front-end development experience,
+                        <h2 className='text-xl font-bold dark:text-white'>Hi, I'm Rejaul Karim</h2>
+                        <p className='dark:text-gray-400 text-[13px]'>I bring over 4 years of front-end development experience,
                             focusing on building modern, responsive web applications
                             that are not only visually impressive but also provide outstanding
                             user experiences. My journey began with a simple curiosity about
                             how websites function, which has since grown into a passion for
                             crafting impactful digital solutions.</p>
-                        <p className='text-gray-400 text-[13px]'>
+                        <p className='dark:text-gray-400 text-[13px]'>
                             I prioritize writing clean, maintainable code and continuously
                             keep up with the latest technologies and industry best practices.
                             Beyond coding, I enjoy exploring new design trends, contributing
@@ -58,14 +58,14 @@ const AboutMe = () => {
                     </div>
                     {/* Technical Skills */}
                     <div className='space-y-0.5'>
-                        <h2 className='text-xl font-bold text-white mb-5'>Technical Skills</h2>
+                        <h2 className='text-xl font-bold dark:text-white mb-5'>Technical Skills</h2>
                         <div>
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-600'><FaReact /></span>
-                                    <p className='text-[15px] text-white'>React</p>
+                                    <p className='text-[15px] dark:text-white'>React</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>95%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>95%</p>
                             </div>
                             <progress className="progress progress-info w-full" value="95" max="100"></progress>
                         </div>
@@ -73,9 +73,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-yellow-500'><TbBrandJavascript /></span>
-                                    <p className='text-[15px] text-white'>JavaScript</p>
+                                    <p className='text-[15px] dark:text-white'>JavaScript</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>90%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>90%</p>
                             </div>
                             <progress className="progress progress-warning w-full" value="90" max="100"></progress>
                         </div>
@@ -83,9 +83,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-600'><TbBrandTypescript /></span>
-                                    <p className='text-[15px] text-white'>TypeScript</p>
+                                    <p className='text-[15px] dark:text-white'>TypeScript</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>90%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>90%</p>
                             </div>
                             <progress className="progress my-progress w-full" value="90" max="100"></progress>
                         </div>
@@ -93,9 +93,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-black'><TbBrandNextjs /></span>
-                                    <p className='text-[15px] text-white'>Next.js</p>
+                                    <p className='text-[15px] dark:text-white'>Next.js</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>85%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>85%</p>
                             </div>
                             <progress className="progress progress-neutral w-full" value="95" max="100"></progress>
                         </div>
@@ -103,9 +103,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-green-600'><FaNodeJs /></span>
-                                    <p className='text-[15px] text-white'>Node.js</p>
+                                    <p className='text-[15px] dark:text-white'>Node.js</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>83%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>83%</p>
                             </div>
                             <progress className="progress progress-success w-full" value="83" max="100"></progress>
                         </div>
@@ -113,9 +113,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-400'><RiTailwindCssFill /></span>
-                                    <p className='text-[15px] text-white'>Tailwind CSS</p>
+                                    <p className='text-[15px] dark:text-white'>Tailwind CSS</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>93%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>93%</p>
                             </div>
                             <progress className="progress progress-info w-full" value="93" max="100"></progress>
                         </div>
@@ -123,9 +123,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-pink-700'><FaFigma /></span>
-                                    <p className='text-[15px] text-white'>Figma</p>
+                                    <p className='text-[15px] dark:text-white'>Figma</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>80%</p>
+                                <p className='dark:text-gray-400 dark:text-[15px]'>80%</p>
                             </div>
                             <progress className="progress progress-error w-full" value="80" max="100"></progress>
                         </div>
@@ -133,9 +133,9 @@ const AboutMe = () => {
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-700'><FaWordpressSimple /></span>
-                                    <p className='text-[15px] text-white'>Wordpress</p>
+                                    <p className='text-[15px] dark:text-white'>Wordpress</p>
                                 </div>
-                                <p className='text-gray-400 text-[15px]'>86%</p>
+                                <p className='dark:text-gray-400 text-[15px]'>86%</p>
                             </div>
                             <progress className="progress my-progress-w w-full" value="86" max="100"></progress>
                         </div>
@@ -143,25 +143,25 @@ const AboutMe = () => {
                 </div>
                 {/* Task I can performe */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5 py-14'>
-                    <div className='space-y-3 p-5 bg-black/30 rounded-2xl'>
+                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-sky-500'><HiMiniCodeBracket size={35} /></span>
-                        <h3 className='text-white font-bold'>Front-end Development</h3>
-                        <p className='text-gray-400 text-[14px]'>Building modern, responsive web applications powered by up-to-date frameworks and tools.</p>
+                        <h3 className='dark:text-white font-bold'>Front-end Development</h3>
+                        <p className='dark:text-gray-400 text-[14px]'>Building modern, responsive web applications powered by up-to-date frameworks and tools.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-black/30 rounded-2xl'>
+                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-purple-600'><FaDatabase size={35} /></span>
-                        <h3 className='text-white font-bold'>Full-Stack Development</h3>
-                        <p className='text-gray-400 text-[14px]'>Managing the full web development lifecycle—from database design to production and upkeep.</p>
+                        <h3 className='dark:text-white font-bold'>Full-Stack Development</h3>
+                        <p className='dark:text-gray-400 text-[14px]'>Managing the full web development lifecycle—from database design to production and upkeep.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-black/30 rounded-2xl'>
+                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-yellow-600'><MdOutlineIntegrationInstructions size={35} /></span>
-                        <h3 className='text-white font-bold'>API Integration</h3>
-                        <p className='text-gray-400 text-[14px]'>Embedding external APIs and services to boost the application's functionality.</p>
+                        <h3 className='dark:text-white font-bold'>API Integration</h3>
+                        <p className='dark:text-gray-400 text-[14px]'>Embedding external APIs and services to boost the application's functionality.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-black/30 rounded-2xl'>
+                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-green-600'><TbWorldWww size={35} /></span>
-                        <h3 className='text-white font-bold'>Web Performance</h3>
-                        <p className='text-gray-400 text-[14px]'>Ensuring web applications run efficiently, are accessible to all users, and rank well in search engines.</p>
+                        <h3 className='dark:text-white font-bold'>Web Performance</h3>
+                        <p className='dark:text-gray-400 text-[14px]'>Ensuring web applications run efficiently, are accessible to all users, and rank well in search engines.</p>
                     </div>
                 </div>
             </div>
