@@ -9,7 +9,7 @@ import SectionTitle from '../../../components/SectionTitle';
 
 const AboutMe = () => {
     return (
-        <section className='pt-20 bg-white dark:bg-black'>
+        <section id='about' className='pt-20 bg-white dark:bg-black'>
             <div className='max-w-screen-xl mx-auto space-y-10 px-3'>
                <SectionTitle
                     heading={"About Me"}

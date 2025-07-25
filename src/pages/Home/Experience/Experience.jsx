@@ -6,7 +6,7 @@ import ExperienceTimeline from '../../../components/ExperienceTimeline';
 
 const Experience = () => {
     return (
-        <section className='bg-gray-100 dark:bg-gray-800'>
+        <section id='experience' className='bg-gray-100 dark:bg-gray-800'>
             <div className='py-14'>
                 <SectionTitle
                     heading={"Experience"}

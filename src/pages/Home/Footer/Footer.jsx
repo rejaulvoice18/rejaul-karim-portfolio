@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className='flex justify-between'>
                     <p className='dark:text-gray-400 text-[10px]'>Developed by <a className='text-pink-600' href="https://www.linkedin.com/in/md-rejaul-karim" target='_blank'>Md Rejaul Karim</a> &copy; {currentYear}. All rights reserved</p>
                     <div className='flex items-center gap-2 text-gray-400 text-[10px]'>
-                        <button className='btn bg-gray-300 dark:bg-gray-800 dark:text-gray-400 text-[10px] border-0 shadow-none h-[25px]'><FaArrowUpLong /> Back to top</button>
+                        <button className='btn bg-gray-400 dark:bg-gray-800 text-white dark:text-gray-400 text-[10px] border-0 shadow-none h-[25px]'><FaArrowUpLong /> Back to top</button>
                     </div>
                 </div>
             </div>

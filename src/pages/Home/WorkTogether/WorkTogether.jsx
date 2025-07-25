@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SectionTitle from '../../../components/SectionTitle';
 import { IoIosSend } from 'react-icons/io';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaPhone } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { IoLocationSharp } from 'react-icons/io5';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const WorkTogether = () => {
-  
+    // const location = useLocation();
+
+    // useEffect(()=>{
+    //     const scrollTarget = location.state?.scrollTo;
+
+    //     if(scrollTarget){
+    //         const el = document.getElementById(scrollTarget);
+    //         if(el){
+    //             el.scrollIntoView({behavior: 'smooth'});
+    //         }
+    //     }
+
+    // }, [location])
+
     return (
-        <section className='bg-gray-100 dark:bg-gray-800 py-20'>
+        <section id='contact' className='bg-gray-100 dark:bg-gray-800 py-20'>
             <div className='max-w-screen-xl mx-auto px-3'>
                 <SectionTitle
                     heading={"Let's Work Together"}

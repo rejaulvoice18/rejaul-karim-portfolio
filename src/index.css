@@ -5,6 +5,13 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* for nav link */
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  scroll-padding-top: 80px; /* adjust if you have a sticky navbar */
+}
 
 
 

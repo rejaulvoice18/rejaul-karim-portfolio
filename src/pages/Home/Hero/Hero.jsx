@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaArrowDown } from 'react-icons/fa';
 import { HiMiniCodeBracket } from 'react-icons/hi2';
 import { ImHappy } from 'react-icons/im';
 import { PiHandWaving } from 'react-icons/pi';
 import { TbBrain } from 'react-icons/tb';
 import Photo from '../../../components/Photo';
+import { useLocation } from 'react-router-dom';
 
 const Hero = () => {
+    const location = useLocation();
+
+    useEffect(()=>{
+        const scrollTarget = location.state?.scrollTo;
+
+        if(scrollTarget){
+            const el = document.getElementById(scrollTarget);
+            if(el){
+                el.scrollIntoView({behavior: 'smooth'});
+            }
+        }
+
+    }, [location])
     return (
-        <div className='dark:bg-black/90 bg-[#fff0fb] min-h-screen'>
+        <div id='home' className='dark:bg-black/90 bg-[#fff0fb] min-h-screen'>
             <section className='max-w-screen-xl mx-auto px-4'>
                 <div className='min-h-screen grid grid-cols-1 md:grid-cols-2 items-center'>
                     <div className='flex flex-col justify-items-center items-center md:items-start mx-auto text-center md:text-start space-y-4 md:space-y-8'>

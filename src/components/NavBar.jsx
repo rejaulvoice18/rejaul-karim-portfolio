@@ -38,12 +38,24 @@ const NavBar = () => {
     //     setTimeout(() => setAnimate(false), 500) // Remove animation after 500ms
     // }
 
+    const handleScroll = (id) => {
+        const el = document.getElementById(id);
+        if(el) {
+            el.scrollIntoView({behavior: 'smooth'})
+        }
+        setIsOpen(false); 
+    }
     const navOptions = <>
-        <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+        {/* <li><Link to="/home" state={{scrollTo: 'home'}} onClick={() => setIsOpen(false)}>Home</Link></li>
         <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
         <li><Link to="/experience" onClick={() => setIsOpen(false)}>Experience</Link></li>
         <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
-        <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+        <li><Link to="/contact" state={{scrollTo: 'contact'}} onClick={() => setIsOpen(false)}>Contact</Link></li> */}
+        <li><button onClick={()=> handleScroll('home')} >Home</button></li>
+        <li><button onClick={()=> handleScroll('about')} >About</button></li>
+        <li><button onClick={()=> handleScroll('experience')} >Experience</button></li>
+        <li><button onClick={()=> handleScroll('project')} >Projects</button></li>
+        <li><button onClick={()=> handleScroll('contact')} >Contact</button></li>
     </>;
 
     return (
