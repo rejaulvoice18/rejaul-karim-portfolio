@@ -6,6 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 
+
+
 body {
     font-family: 'JetBrains Mono', monospace;
   }

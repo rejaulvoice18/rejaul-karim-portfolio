@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdWork } from 'react-icons/md';
@@ -6,6 +6,9 @@ import { SlCalender } from 'react-icons/sl';
 
 
 const ExperienceTimeline = () => {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+
     const experienc = [
         {
             id : '01',
@@ -60,15 +63,23 @@ const ExperienceTimeline = () => {
                             className="vertical-timeline-element--work"
                             icon={<MdWork />}
                             iconStyle={{ background: '#6c63ff', color: '#fff' }}
-                            contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
+                            const contentStyle = {{
+                                background: isDarkMode ? 'rgba(21, 128, 61, 0.2)' : '#000000',
+                                color: '#fff',
+                                border: '1px solid rgba(21, 128, 61, 0.2)',
+                                boxShadow: 'none'
+                              }}
+                            // contentClassName="bg-blue-700 dark:bg-gray-700"
+                            // contentStyle={{ background: '#111111', color: '#fff', border: '#374151', boxShadow: 'none' }}
+                            // contentClassName="bg-[#111111] text-white border border-gray-700 shadow-none dark:bg-green-700/20"
                         >
                             <div className='space-y-2'>
-                                <h3 className="font-bold text-white">{singleItem.designation}</h3>
-                                <h4 className="text-xs text-gray-400">{singleItem.institute}</h4>
+                                <h3 className="font-bold text-black dark:text-white">{singleItem.designation}</h3>
+                                <h4 className="text-xs text-black dark:text-gray-400">{singleItem.institute}</h4>
                                 <div className='flex items-center gap-1 text-pink-400'>
                                     <SlCalender size={11} /> <span className='text-xs text-pink-400'>{singleItem.time}</span>
                                 </div>
-                                <ul className="text-xs text-gray-400 list-disc marker:text-purple-400 ml-5 space-y-3">
+                                <ul className="text-xs text-black dark:text-gray-400 list-disc marker:text-purple-400 ml-5 space-y-3">
                                     {singleItem.description.map((item, idx) => (
                                         <li key={idx}>{item}</li>
                                     ))}
