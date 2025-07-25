@@ -76,7 +76,7 @@ const FeaturedProjects = () => {
     };
 
     return (
-        <section className='py-20 bg-gray-800/50'>
+        <section className='py-20 dark:bg-black/90 bg-[#fff0fb]'>
             <div className='max-w-screen-xl mx-auto px-3'>
                 <SectionTitle
                     heading={"Featured Projects"}
