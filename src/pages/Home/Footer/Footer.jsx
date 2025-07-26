@@ -15,7 +15,7 @@ const Footer = () => {
                     {/* introduction */}
                     <div className=''>
                         <div className='flex items-center gap-1'>
-                            <img className='w-7 bg-gradient-to-r from-pink-600 to-purple-700 rounded-md' src={logo} alt="" /><h3 className='dark:text-white'>Md Rejaul Karim</h3>
+                            <img className='w-7 bg-gradient-to-r from-pink-600 to-purple-700 rounded-md' src={logo} alt="" /><h3 className='text-white font-bold'>Md Rejaul Karim</h3>
                         </div>
                         <p className='dark:text-gray-400 text-[10px] py-3'>Creative Frontend Developer dedicated to crafting visually engaging and user-friendly web interfaces. Excited to collaborate and bring innovative ideas to life.</p>
                         <div className='dark:text-gray-400 text-[9px] flex items-center gap-1'>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                     {/* Links */}
                     <div className='md:mx-auto'>
-                        <h3 className='dark:text-white text-xs pb-3'>Quick Links</h3>
+                        <h3 className='text-white font-bold text-xs pb-3'>Quick Links</h3>
                         <div className='flex flex-col dark:text-gray-400 text-xs gap-2'>
                             <a href="">Home</a>
                             <a href="">About</a>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                     {/* Social buttons */}
                     <div className=''>
-                        <h4 className='dark:text-white text-xs mb-3'>Connect</h4>
+                        <h4 className='font-bold text-white text-xs mb-3'>Connect</h4>
                         <div className='space-y-3'>
                             {/* Social Links */}
                             <div className='flex gap-3 space-y-2'>
@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
                 <hr className='my-5 text-gray-400'/>
                 <div className='flex justify-between'>
-                    <p className='dark:text-gray-400 text-[10px]'>Developed by <a className='text-pink-600' href="https://www.linkedin.com/in/md-rejaul-karim" target='_blank'>Md Rejaul Karim</a> &copy; {currentYear}. All rights reserved</p>
+                    <p className='text-gray-400 text-[10px]'>Developed by <a className='text-pink-600' href="https://www.linkedin.com/in/md-rejaul-karim" target='_blank'>Md Rejaul Karim</a> &copy; {currentYear}. All rights reserved</p>
                     <div className='flex items-center gap-2 text-gray-400 text-[10px]'>
                         <button className='btn bg-gray-400 dark:bg-gray-800 text-white dark:text-gray-400 text-[10px] border-0 shadow-none h-[25px]'><FaArrowUpLong /> Back to top</button>
                     </div>

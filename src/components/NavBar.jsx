@@ -10,10 +10,9 @@ import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeNav, setActiveNav] = useState('home'); //default to 'home'
 
     const mobileNavRef = useRef(null);
-
-  
 
     // Close menu when clicking outside
     useEffect(() => {
@@ -31,32 +30,36 @@ const NavBar = () => {
         }
     }, [isOpen])
 
-    // const [animate, setAnimate] = useState(false)
-
-    // const handleDownload = () => {
-    //     setAnimate(true);
-    //     setTimeout(() => setAnimate(false), 500) // Remove animation after 500ms
-    // }
-
+    // nav navigation
     const handleScroll = (id) => {
         const el = document.getElementById(id);
-        if(el) {
-            el.scrollIntoView({behavior: 'smooth'})
-        }
-        setIsOpen(false); 
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+
+        setActiveNav(id)
+        setIsOpen(false);
     }
-    const navOptions = <>
-        {/* <li><Link to="/home" state={{scrollTo: 'home'}} onClick={() => setIsOpen(false)}>Home</Link></li>
-        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-        <li><Link to="/experience" onClick={() => setIsOpen(false)}>Experience</Link></li>
-        <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
-        <li><Link to="/contact" state={{scrollTo: 'contact'}} onClick={() => setIsOpen(false)}>Contact</Link></li> */}
-        <li><button onClick={()=> handleScroll('home')} >Home</button></li>
-        <li><button onClick={()=> handleScroll('about')} >About</button></li>
-        <li><button onClick={()=> handleScroll('experience')} >Experience</button></li>
-        <li><button onClick={()=> handleScroll('project')} >Projects</button></li>
-        <li><button onClick={()=> handleScroll('contact')} >Contact</button></li>
-    </>;
+
+    const navItems = [
+        { id: 'home', label: 'Home' },
+        { id: 'about', label: 'About' },
+        { id: 'experience', label: 'Experience' },
+        { id: 'project', label: 'Projects' },
+        { id: 'contact', label: 'Contact' }
+    ];
+
+    const navOptions = navItems.map(item => (
+        <li key={item.id}>
+            <button onClick={() => handleScroll(item.id)}
+                className={`
+                px-3 py-1 rounded font-semibold transition-all duration-300 
+                ${activeNav === item.id ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' : 'text-black dark:text-white'}
+                hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white hover:scale-105
+                `}
+            >
+               {item.label}
+            </button>
+        </li>
+    ))
 
     return (
         <>
@@ -72,7 +75,7 @@ const NavBar = () => {
 
                     <div className="navbar-end w-[60%]">
                         <div className="hidden md:flex">
-                            <ul className="menu menu-horizontal px-1 text-xs">
+                            <ul className="menu menu-horizontal px-1 text-xs items-center h-full space-x-2">
                                 {navOptions}
                                 <div
                                     className='group flex items-center py-1 px-3 gap-1 rounded-sm bg-gradient-to-r from-purple-600 to-pink-500
