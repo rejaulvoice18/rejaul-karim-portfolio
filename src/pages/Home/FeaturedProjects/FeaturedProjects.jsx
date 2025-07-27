@@ -32,7 +32,7 @@ const FeaturedProjects = () => {
         },
         {
             id: '003',
-            projects_name: 'Animal Adoption by JavaScript',
+            projects_name: 'Animal Adoption by JavaScript Api integration',
             thumbnail: 'https://i.ibb.co/hxLHKN6q/peddy.png',
             git_client: 'https://github.com/rejaulvoice18/peddy-adoption',
             git_server: 'NA',
@@ -51,6 +51,17 @@ const FeaturedProjects = () => {
             details: 'online sports equipment website using React.js, Node.js, Express.js, MongoDB, and Tailwind CSS, with Firebase authentication. Users can log in, view product details, and browse seamlessly. Admins can manage inventory by adding, editing, and deleting products. The platform offers a smooth, user-friendly experience for all.',
             skills: ['React.js', 'JavaScript', 'Next.js', 'TailwindCSS', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB'],
             category: 'fullstack'
+        },
+        {
+            id: '005',
+            projects_name: 'RedOnion Online Restaurent',
+            thumbnail: 'https://i.ibb.co/PvsDRsRt/RedOnion.png',
+            git_client: 'https://github.com/rejaulvoice18/equisports-lisboa-client',
+            git_server: 'https://github.com/rejaulvoice18/equisports-lisboa-server',
+            web: 'https://equisports-lisboa.web.app/',
+            details: 'online sports equipment website using React.js, Node.js, Express.js, MongoDB, and Tailwind CSS, with Firebase authentication. Users can log in, view product details, and browse seamlessly. Admins can manage inventory by adding, editing, and deleting products. The platform offers a smooth, user-friendly experience for all.',
+            skills: ['React.js', 'JavaScript', 'Next.js', 'TailwindCSS', 'TypeScript'],
+            category: 'frontend'
         }
     ]
     // This usestate for Modal purpose 

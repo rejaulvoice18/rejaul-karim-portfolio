@@ -29,11 +29,11 @@ const Footer = () => {
                     <div className='md:mx-auto'>
                         <h3 className='text-white font-bold text-xs pb-3'>Quick Links</h3>
                         <div className='flex flex-col dark:text-gray-400 text-xs gap-2'>
-                            <a href="">Home</a>
-                            <a href="">About</a>
-                            <a href="">Experience</a>
-                            <a href="">Projects</a>
-                            <a href="">Contact</a>
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#project">Projects</a>
+                            <a href="#contact">Contact</a>
                         </div>
                     </div>
                     {/* Social buttons */}
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className='flex justify-between'>
                     <p className='text-gray-400 text-[10px]'>Developed by <a className='text-pink-600' href="https://www.linkedin.com/in/md-rejaul-karim" target='_blank'>Md Rejaul Karim</a> &copy; {currentYear}. All rights reserved</p>
                     <div className='flex items-center gap-2 text-gray-400 text-[10px]'>
-                        <button className='btn bg-gray-400 dark:bg-gray-800 text-white dark:text-gray-400 text-[10px] border-0 shadow-none h-[25px]'><FaArrowUpLong /> Back to top</button>
+                        <button className='btn bg-gray-400 dark:bg-gray-800 text-white dark:text-gray-400 text-[10px] border-0 shadow-none h-[25px]'><FaArrowUpLong /> <a href="#home">Back to top</a></button>
                     </div>
                 </div>
             </div>

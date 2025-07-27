@@ -9,8 +9,8 @@ const ThemeToggle = () => {
     return (
         <button
             onClick={toggleTheme}
-            className='text-xl px-4 py-2 rounded transition-colors duration-300 bg-gray-200 dark:bg-gray-700'>
-            {theme === 'dark' ? <Sun className='h-5 w-5 text-yellow-400' /> : <Moon className='h-5 w-5 text-blue-900' />}
+            className='text-xl cursor-pointer p-1.5 rounded-md transition-colors duration-300 bg-gray-200 dark:bg-gray-700 hover:bg-gray-600'>
+            {theme === 'dark' ? <Sun className='h-3 w-3 text-yellow-400' /> : <Moon className='h-3 w-3 text-blue-900' />}
         </button>
     )
 };

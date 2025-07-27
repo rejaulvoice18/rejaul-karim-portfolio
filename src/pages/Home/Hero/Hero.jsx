@@ -22,9 +22,9 @@ const Hero = () => {
 
     }, [location])
     return (
-        <div id='home' className='dark:bg-black/90 bg-[#fff0fb] min-h-screen'>
-            <section className='max-w-screen-xl mx-auto px-4'>
-                <div className='min-h-screen grid grid-cols-1 md:grid-cols-2 items-center'>
+        <div id='home' className='dark:bg-black/90 bg-[#fff0fb]'>
+            <section className='pt-20 md:pt-0 max-w-screen-xl mx-auto px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 place-items-center h-screen'>
                     <div className='flex flex-col justify-items-center items-center md:items-start mx-auto text-center md:text-start space-y-4 md:space-y-8'>
                         <div className='flex items-center gap-1 py-3 px-5 bg-purple-300/20 dark:bg-black/30 rounded-lg'>
                             <span className='text-yellow-600'><PiHandWaving size={22}></PiHandWaving></span>
@@ -51,15 +51,15 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-                            <button className='btn bg-gradient-to-r from-pink-600 to-purple-700 text-white w-full sm:w-auto py-6'>View My Projects</button>
-                            <button className='btn btn-outline text-white bg-gray-700 border-gray-500 w-full sm:w-auto py-6'>Get In Touch</button>
+                            <button className='btn bg-gradient-to-r from-pink-600 to-purple-700 text-white w-full sm:w-auto py-6'><a href="#project">View My Projects</a></button>
+                            <button className='btn btn-outline text-white bg-gray-700 border-gray-500 w-full sm:w-auto py-6'><a href="#contact">Get In Touch</a></button>
                         </div>
                         <div className='text-sm space-y-4 dark:text-gray-400 flex-col justify-items-center'>
                             <p>Scroll to explore</p>
                             <FaArrowDown />
                         </div>
                     </div>
-                    <div>
+                    <div className='h-full w-full flex items-center justify-center'>
                         <Photo />
                     </div>
                 </div>

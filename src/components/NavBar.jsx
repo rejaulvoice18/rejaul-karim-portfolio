@@ -51,7 +51,7 @@ const NavBar = () => {
         <li key={item.id}>
             <button onClick={() => handleScroll(item.id)}
                 className={`
-                px-3 py-1 rounded font-semibold transition-all duration-300 
+                px-3 py-1 rounded font-semibold transition-all duration-300 cursor-pointer
                 ${activeNav === item.id ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' : 'text-black dark:text-white'}
                 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white hover:scale-105
                 `}
@@ -73,10 +73,11 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className="navbar-end w-[60%]">
+                    <div className="navbar-end w-[80%]">
                         <div className="hidden md:flex">
-                            <ul className="menu menu-horizontal px-1 text-xs items-center h-full space-x-2">
+                            <ul className="menu menu-horizontal px-1 text-xs items-center h-full space-x-1.5">
                                 {navOptions}
+                                <ThemeToggle />
                                 <div
                                     className='group flex items-center py-1 px-3 gap-1 rounded-sm bg-gradient-to-r from-purple-600 to-pink-500
                                     hover:from-pink-500 hover:to-purple-600 transition-all duration-300 ease-in-out cursor-pointer 
@@ -93,7 +94,7 @@ const NavBar = () => {
                                         CV
                                     </Link>
                                 </div>
-                                <ThemeToggle />
+                                
                             </ul>
                         </div>
                         {/* Hamburger Icon for Mobile */}
@@ -125,7 +126,8 @@ const NavBar = () => {
                     </div>
 
                     {/* Navigation */}
-                    <ul className="mt-10 space-y-4 text-xl font-semibold">
+                    <ul className="mt-10 space-y-4 font-semibold text-xs">
+                        <ThemeToggle />
                         {navOptions}
                     </ul>
 
