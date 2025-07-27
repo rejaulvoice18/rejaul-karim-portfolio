@@ -6,17 +6,18 @@ import { PiHandWaving } from 'react-icons/pi';
 import { TbBrain } from 'react-icons/tb';
 import Photo from '../../../components/Photo';
 import { useLocation } from 'react-router-dom';
+import HomeDescription from '../../../components/HomeDescription';
 
 const Hero = () => {
     const location = useLocation();
 
-    useEffect(()=>{
+    useEffect(() => {
         const scrollTarget = location.state?.scrollTo;
 
-        if(scrollTarget){
+        if (scrollTarget) {
             const el = document.getElementById(scrollTarget);
-            if(el){
-                el.scrollIntoView({behavior: 'smooth'});
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
             }
         }
 
@@ -33,9 +34,14 @@ const Hero = () => {
                             </h6>
                         </div>
                         <h1 className='text-2xl md:text-3xl lg:text-5xl dark:text-white font-bold'>Front-end Developer</h1>
-                        <p className='text-gray-400 w-5/6 md:w-5/6'>I build interactive, visually polished web experiences using React, JavaScript,
+                        {/* <p className='text-gray-400 w-5/6 md:w-5/6'>I build interactive, visually polished web experiences using React, JavaScript,
                             TypeScript, and modern frontend frameworks — blending clean design with efficient
-                            code to deliver fast, user-friendly interfaces.</p>
+                            code to deliver fast, user-friendly interfaces.</p> */}
+                            <div className='w-full h-[170px] md:h-[160px] relative'>
+                                <div className='absolute top-0 left-0 w-full h-full'>
+                                    <HomeDescription />
+                                </div>
+                            </div>
                         <div className='flex flex-wrap justify-center md:justify-start md:items-start items-center gap-3 md:gap-8 px-2 md:px-0'>
                             <div className='flex gap-2 items-center'>
                                 <span className='text-green-500'><HiMiniCodeBracket size={22} /></span>
@@ -54,14 +60,17 @@ const Hero = () => {
                             <button className='btn bg-gradient-to-r from-pink-600 to-purple-700 text-white w-full sm:w-auto py-6'><a href="#project">View My Projects</a></button>
                             <button className='btn btn-outline text-white bg-gray-700 border-gray-500 w-full sm:w-auto py-6'><a href="#contact">Get In Touch</a></button>
                         </div>
-                        <div className='text-sm space-y-4 dark:text-gray-400 flex-col justify-items-center'>
-                            <p>Scroll to explore</p>
-                            <FaArrowDown />
-                        </div>
                     </div>
                     <div className='h-full w-full flex items-center justify-center'>
                         <Photo />
                     </div>
+                </div>
+                <div className='-mt-28 pb-16 text-sm space-y-4 dark:text-gray-400 flex-col justify-items-center'>
+                    <p>Scroll to explore</p>
+                    <div className="relative h-16">
+                        <FaArrowDown className="text-pink-700 absolute left-1/2 -translate-x-1/2 animate-bounce scale-125" />
+                    </div>
+
                 </div>
             </section>
         </div>
