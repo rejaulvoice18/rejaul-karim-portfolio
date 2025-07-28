@@ -1,25 +1,34 @@
-import React, { useEffect } from 'react';
+
 import SectionTitle from '../../../components/SectionTitle';
 import { IoIosSend } from 'react-icons/io';
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaPhone } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { IoLocationSharp } from 'react-icons/io5';
 import { Link, useLocation } from 'react-router-dom';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const WorkTogether = () => {
-    // const location = useLocation();
+    const form = useRef();
 
-    // useEffect(()=>{
-    //     const scrollTarget = location.state?.scrollTo;
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    //     if(scrollTarget){
-    //         const el = document.getElementById(scrollTarget);
-    //         if(el){
-    //             el.scrollIntoView({behavior: 'smooth'});
-    //         }
-    //     }
-
-    // }, [location])
+        emailjs
+            .sendForm('rejaulvoice', 'template_kl83qg9', form.current, {
+                publicKey: 'wdFZiblZJhUrei4ST',
+            })
+            .then(
+                () => {
+                    toast('Message sent successfully')
+                },
+                (error) => {
+                    toast(error.text)
+                },
+            );
+            e.target.reset();
+    };
 
     return (
         <section id='contact' className='bg-gray-100 dark:bg-gray-800 py-20'>
@@ -32,25 +41,27 @@ const WorkTogether = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'>
                     <div className='bg-blue-700/20 dark:bg-black/50 p-4 rounded-md space-y-2'>
                         <h3 className='dark:text-white'>Send me a message</h3>
-                        <div className='md:flex space-y-3 gap-5 w-full'>
-                            <div className='w-full'>
-                                <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Name</legend>
-                                <input type="text" className="input focus:outline-0 input-sm w-full dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="Your name" />
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className='md:flex space-y-3 gap-5 w-full'>
+                                <div className='w-full'>
+                                    <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Name</legend>
+                                    <input type="text" name='client-name' className="input focus:outline-0 input-sm w-full dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="Your name" />
+                                </div>
+                                <div className='w-full'>
+                                    <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Email</legend>
+                                    <input type="email" name='email' className="input input-sm w-full focus:outline-0 text-black dark:bg-gray-800 dark:text-gray-300 text-[10px]" placeholder="Your email" />
+                                </div>
                             </div>
                             <div className='w-full'>
-                                <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Email</legend>
-                                <input type="email" className="input input-sm w-full focus:outline-0 text-black dark:bg-gray-800 dark:text-gray-300 text-[10px]" placeholder="Your email" />
+                                <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Topic</legend>
+                                <input type="text" name='title' className="input focus:outline-0 input-sm w-full dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="What's on your mind" />
                             </div>
-                        </div>
-                        <div className='w-full'>
-                            <legend className="fieldset-legend dark:text-gray-300 text-[10px]">Topic</legend>
-                            <input type="text" className="input focus:outline-0 input-sm w-full dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="What's on your mind" />
-                        </div>
-                        <div className='w-full'>
-                            <legend className="fieldset-legend text-gray-300 text-[10px]">Message</legend>
-                            <textarea className="textarea h-24 w-full focus:outline-0 dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="Tell me about your project and other details..."></textarea>
-                        </div>
-                        <button className='btn btn-block bg-gradient-to-r from-pink-600 to-purple-700 text-white border-0 text-xs'><IoIosSend size={18} /> Send Message</button>
+                            <div className='w-full'>
+                                <legend className="fieldset-legend text-gray-300 text-[10px]">Message</legend>
+                                <textarea name='message' className="textarea h-24 w-full focus:outline-0 dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="Tell me about your project and other details..."></textarea>
+                            </div>
+                            <button className='btn btn-block bg-gradient-to-r from-pink-600 to-purple-700 text-white border-0 text-xs' type='submit' value="Send Message"><IoIosSend size={18} /> Send Message</button>
+                        </form>
                     </div>
                     <div className=''>
                         <h3 className='dark:text-white'>Get in Touch</h3>

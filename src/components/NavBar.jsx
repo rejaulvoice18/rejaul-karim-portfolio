@@ -73,13 +73,13 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className="navbar-end w-[80%]">
+                    <div className="navbar-end w-[95%]">
                         <div className="hidden md:flex">
-                            <ul className="menu menu-horizontal px-1 text-xs items-center h-full space-x-1.5">
+                            <ul className="menu menu-horizontal px-1 text-xs items-center h-full space-x-1">
                                 {navOptions}
                                 <ThemeToggle />
                                 <div
-                                    className='group flex items-center py-1 px-3 gap-1 rounded-sm bg-gradient-to-r from-purple-600 to-pink-500
+                                    className='group flex items-center py-1 px-2 gap-0.5 rounded-sm bg-gradient-to-r from-purple-600 to-pink-500
                                     hover:from-pink-500 hover:to-purple-600 transition-all duration-300 ease-in-out cursor-pointer 
                                     hover:scale-105
                                 '>
@@ -139,11 +139,9 @@ const NavBar = () => {
                             rel="noopener noreferrer"
                             className="w-full text-center py-2 bg-gradient-to-r from-purple-600 to-pink-500 hover:bg-green-800 rounded text-white font-bold">HIRE ME</Link>
                         <div className="flex gap-4 text-xl">
-                            <FaYoutube className="hover:text-green-500 cursor-pointer" />
-                            <FaGithub className="hover:text-green-500 cursor-pointer" />
-                            <FaLinkedin className="hover:text-green-500 cursor-pointer" />
-                            <FaFacebook className="hover:text-green-500 cursor-pointer" />
-                            <FaInstagram className="hover:text-green-500 cursor-pointer" />
+                            <a href="https://github.com/rejaulvoice18" target='_blank' rel="noopener noreferrer"><FaGithub className="hover:text-green-500 cursor-pointer" /></a>
+                            <a href="https://www.linkedin.com/in/md-rejaul-karim" target='_blank' rel="noopener noreferrer"><FaLinkedin className="hover:text-green-500 cursor-pointer" /></a>
+                            <a href="https://www.facebook.com/rejaulvoice" target='_blank' rel="noopener noreferrer"><FaFacebook className="hover:text-green-500 cursor-pointer" /></a>
                         </div>
                     </div>
                 </div>

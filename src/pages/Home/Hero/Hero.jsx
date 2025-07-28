@@ -7,6 +7,8 @@ import { TbBrain } from 'react-icons/tb';
 import Photo from '../../../components/Photo';
 import { useLocation } from 'react-router-dom';
 import HomeDescription from '../../../components/HomeDescription';
+import { FaReact, FaNodeJs, FaHtml5 } from 'react-icons/fa';
+import { SiTailwindcss } from "react-icons/si";
 
 const Hero = () => {
     const location = useLocation();
@@ -23,7 +25,16 @@ const Hero = () => {
 
     }, [location])
     return (
-        <div id='home' className='dark:bg-black/90 bg-[#fff0fb]'>
+        <div id='home' className='dark:bg-black/90 bg-[#fff0fb] relative overflow-hidden min-h-screen'>
+            {/* Floating Background Icons */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <FaReact className="text-cyan-400 opacity-10 blur-sm text-[140px] absolute top-10 left-10 animate-pulse" />
+                <FaNodeJs className="text-green-400 opacity-10 blur-sm text-[120px] absolute bottom-16 right-12 animate-spin-slow" />
+                <FaHtml5 className="text-orange-400 opacity-10 blur-sm text-[100px] absolute top-1/3 left-2/3 animate-float" />
+                <SiTailwindcss className="text-sky-400 opacity-10 blur-sm text-[120px] absolute bottom-28 left-1/4 animate-float" />
+               
+            </div>
+            {/* Foreground Content */}
             <section className='pt-20 md:pt-0 max-w-screen-xl mx-auto px-4'>
                 <div className='grid grid-cols-1 md:grid-cols-2 place-items-center h-screen'>
                     <div className='flex flex-col justify-items-center items-center md:items-start mx-auto text-center md:text-start space-y-4 md:space-y-8'>
@@ -35,13 +46,13 @@ const Hero = () => {
                         </div>
                         <h1 className='text-2xl md:text-3xl lg:text-5xl dark:text-white font-bold'>Front-end Developer</h1>
                         {/* <p className='text-gray-400 w-5/6 md:w-5/6'>I build interactive, visually polished web experiences using React, JavaScript,
-                            TypeScript, and modern frontend frameworks — blending clean design with efficient
-                            code to deliver fast, user-friendly interfaces.</p> */}
-                            <div className='w-full h-[170px] md:h-[160px] relative'>
-                                <div className='absolute top-0 left-0 w-full h-full'>
-                                    <HomeDescription />
-                                </div>
+                        TypeScript, and modern frontend frameworks — blending clean design with efficient
+                        code to deliver fast, user-friendly interfaces.</p> */}
+                        <div className='w-full h-[170px] md:h-[160px] relative'>
+                            <div className='absolute top-0 left-0 w-full h-full'>
+                                <HomeDescription />
                             </div>
+                        </div>
                         <div className='flex flex-wrap justify-center md:justify-start md:items-start items-center gap-3 md:gap-8 px-2 md:px-0'>
                             <div className='flex gap-2 items-center'>
                                 <span className='text-green-500'><HiMiniCodeBracket size={22} /></span>
@@ -74,6 +85,7 @@ const Hero = () => {
                 </div>
             </section>
         </div>
+        
     );
 };
 
