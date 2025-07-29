@@ -1,12 +1,22 @@
-# React + Vite
+# 💼 Rejaul Karim – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive developer portfolio website built with **React.js**, **Tailwind CSS**, **Framer Motion**, and **EmailJS** to showcase skills, projects, and provide a way for clients and recruiters to connect in real-time.
 
-Currently, two official plugins are available:
+![Thumbnail](https://i.ibb.co/mCkby6bv/Screenshot-2025-07-29-at-12-09-30-PM.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ **Built with React.js** – Fast, interactive UI components and smooth navigation.
+- 🎨 **Tailwind CSS** – Utility-first CSS framework for sleek, mobile-first design.
+- 🌀 **Framer Motion + Tailwind Animations** – Engaging animations and transitions.
+- ✉️ **EmailJS Integration** – Live messaging feature to directly receive messages from clients.
+- 🌙 **Dark Mode Friendly** – Visually appealing across different environments.
+- 🧩 **Modular & Clean Code Structure** – Easy to read, update, and scale.
+
+---
+
+## 📁 Folder Structure
+
+
