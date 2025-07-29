@@ -3,7 +3,7 @@ import SectionTitle from '../../../components/SectionTitle';
 import ProjectCard from '../../../components/ProjectCard';
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectModal from '../../../components/ProjectModal';
-import { projects } from '../../../../public/data';
+import { projects } from '../../../assets/data';
 
 
 const FeaturedProjects = () => {

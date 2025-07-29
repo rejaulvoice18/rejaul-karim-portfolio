@@ -4,6 +4,7 @@ import { FaTimes, FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } fro
 import logo from '../assets/logo.png';
 import { FiDownload } from 'react-icons/fi';
 import ThemeToggle from './ThemeToggle';
+import portfolio from '../assets/Md Rejaul Karim Front-end Developer.pdf'
 
 
 const NavBar = () => {
@@ -54,7 +55,7 @@ const NavBar = () => {
                 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white hover:scale-105
                 `}
             >
-               {item.label}
+                {item.label}
             </button>
         </li>
     ))
@@ -84,15 +85,16 @@ const NavBar = () => {
                                     <FiDownload
                                         className="text-white group-hover:animate-bounce transition-all duration-300"
                                     />
-                                    <Link
-                                        to={"/Md Rejaul Karim Front-end Developer.pdf"}
-                                        target="_blank"
+                                    <a
+                                        href={portfolio}
+                                        download
                                         rel="noopener noreferrer"
-                                        className="text-center text-xs text-white font-bold">
+                                        className="text-center text-xs text-white font-bold"
+                                    >
                                         CV
-                                    </Link>
+                                    </a>
                                 </div>
-                                
+
                             </ul>
                         </div>
                         {/* Hamburger Icon for Mobile */}
@@ -132,7 +134,7 @@ const NavBar = () => {
                     {/* Footer */}
                     <div className="flex flex-col items-center gap-6 mt-auto">
                         <Link
-                            to={"/Md Rejaul Karim Front-end Developer.pdf"}
+                            to={portfolio}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full text-center py-2 bg-gradient-to-r from-purple-600 to-pink-500 hover:bg-green-800 rounded text-white font-bold">HIRE ME</Link>
