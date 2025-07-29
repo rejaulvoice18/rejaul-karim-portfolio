@@ -7,7 +7,9 @@ import { TbBrandJavascript, TbBrandNextjs, TbBrandTypescript, TbWorldWww } from 
 import SectionTitle from '../../../components/SectionTitle';
 
 
+
 const AboutMe = () => {
+   
     return (
         // About Section Start 
         <section id='about' className='pt-20 bg-white dark:bg-black'>
@@ -60,7 +62,7 @@ const AboutMe = () => {
                     {/* Technical Skills */}
                     <div className='space-y-0.5'>
                         <h2 className='text-xl font-bold dark:text-white mb-5'>Technical Skills</h2>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-600'><FaReact /></span>
@@ -70,7 +72,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-info w-full" value="95" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-yellow-500'><TbBrandJavascript /></span>
@@ -80,7 +82,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-warning w-full" value="90" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-600'><TbBrandTypescript /></span>
@@ -90,7 +92,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress my-progress w-full" value="90" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-black'><TbBrandNextjs /></span>
@@ -100,7 +102,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-neutral w-full" value="95" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-green-600'><FaNodeJs /></span>
@@ -110,7 +112,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-success w-full" value="83" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-400'><RiTailwindCssFill /></span>
@@ -120,7 +122,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-info w-full" value="93" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-pink-700'><FaFigma /></span>
@@ -130,7 +132,7 @@ const AboutMe = () => {
                             </div>
                             <progress className="progress progress-error w-full" value="80" max="100"></progress>
                         </div>
-                        <div>
+                        <div data-aos="fade-up-right">
                             <div className='flex justify-between w-full'>
                                 <div className='flex items-center gap-2'>
                                     <span className='text-sky-700'><FaWordpressSimple /></span>
@@ -144,22 +146,22 @@ const AboutMe = () => {
                 </div>
                 {/* Task I can performe */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5 py-14'>
-                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
+                    <div data-aos="flip-left" className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-sky-500'><HiMiniCodeBracket size={35} /></span>
                         <h3 className='dark:text-white font-bold'>Front-end Development</h3>
                         <p className='dark:text-gray-400 text-[14px]'>Building modern, responsive web applications powered by up-to-date frameworks and tools.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
+                    <div data-aos="flip-left" className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-purple-600'><FaDatabase size={35} /></span>
                         <h3 className='dark:text-white font-bold'>Full-Stack Development</h3>
                         <p className='dark:text-gray-400 text-[14px]'>Managing the full web development lifecycle—from database design to production and upkeep.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
+                    <div data-aos="flip-left" className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-yellow-600'><MdOutlineIntegrationInstructions size={35} /></span>
                         <h3 className='dark:text-white font-bold'>API Integration</h3>
                         <p className='dark:text-gray-400 text-[14px]'>Embedding external APIs and services to boost the application's functionality.</p>
                     </div>
-                    <div className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
+                    <div data-aos="flip-left" className='space-y-3 p-5 bg-blue-700/20 dark:bg-white/5 backdrop-blur-md rounded-md'>
                         <span className='inline-block text-green-600'><TbWorldWww size={35} /></span>
                         <h3 className='dark:text-white font-bold'>Web Performance</h3>
                         <p className='dark:text-gray-400 text-[14px]'>Ensuring web applications run efficiently, are accessible to all users, and rank well in search engines.</p>

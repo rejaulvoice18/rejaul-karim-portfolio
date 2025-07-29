@@ -3,8 +3,8 @@ import SectionTitle from '../../../components/SectionTitle';
 import ExperienceTimeline from '../../../components/ExperienceTimeline';
 
 
-
 const Experience = () => {
+    
     return (
         // Experience Section Start
         <section id='experience' className='bg-gray-100 dark:bg-gray-800'>
