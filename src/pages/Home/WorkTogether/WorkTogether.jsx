@@ -60,7 +60,7 @@ const WorkTogether = () => {
                                 <legend className="fieldset-legend text-gray-300 text-[10px]">Message</legend>
                                 <textarea name='message' className="textarea h-24 w-full focus:outline-0 dark:bg-gray-800 text-black dark:text-gray-300 text-[10px]" placeholder="Tell me about your project and other details..."></textarea>
                             </div>
-                            <button className='btn btn-block bg-gradient-to-r from-pink-600 to-purple-700 text-white border-0 text-xs' type='submit' value="Send Message"><IoIosSend size={18} /> Send Message</button>
+                            <button className='btn mt-3 btn-block bg-gradient-to-r from-pink-600 to-purple-700 text-white border-0 text-xs' type='submit' value="Send Message"><IoIosSend size={18} /> Send Message</button>
                         </form>
                     </div>
                     <div className=''>

@@ -6,8 +6,6 @@ import { FiDownload } from 'react-icons/fi';
 import ThemeToggle from './ThemeToggle';
 
 
-
-
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeNav, setActiveNav] = useState('home'); //default to 'home'
@@ -146,6 +144,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
+            {/* Navbar Ends here */}
         </>
     );
 };

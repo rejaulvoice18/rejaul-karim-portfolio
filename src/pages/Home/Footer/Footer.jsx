@@ -8,7 +8,7 @@ import { FaArrowUpLong } from 'react-icons/fa6';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        // Footer section start from here
+        // Footer section start
         <section className='bg-gray-300 dark:bg-black py-10'>
             <div className='max-w-screen-xl mx-auto px-3'>
                 <div className='grid grid-cols md:grid-cols-3 gap-5'>
@@ -77,6 +77,7 @@ const Footer = () => {
                 </div>
             </div>
         </section>
+        // Footer Section end
     );
 };
 

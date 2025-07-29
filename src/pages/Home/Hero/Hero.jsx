@@ -3,7 +3,7 @@ import { FaArrowDown } from 'react-icons/fa';
 import { HiMiniCodeBracket } from 'react-icons/hi2';
 import { ImHappy } from 'react-icons/im';
 import { PiHandWaving } from 'react-icons/pi';
-import { TbBrain } from 'react-icons/tb';
+import { TbBrain, TbBrandJavascript } from 'react-icons/tb';
 import Photo from '../../../components/Photo';
 import { useLocation } from 'react-router-dom';
 import HomeDescription from '../../../components/HomeDescription';
@@ -25,12 +25,13 @@ const Hero = () => {
 
     }, [location])
     return (
+        // Hero Section start
         <div id='home' className='dark:bg-black/90 bg-[#fff0fb] relative overflow-hidden min-h-screen'>
             {/* Floating Background Icons */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <FaReact className="text-cyan-400 opacity-10 blur-sm text-[140px] absolute top-10 left-10 animate-pulse" />
+                <FaReact className="text-cyan-400 opacity-10 blur-sm text-[140px] absolute top-1/3 left-2/3 animate-pulse" />
+                <TbBrandJavascript className="text-orange-400 opacity-10 blur-sm text-[100px] absolute top-20 left-20  animate-pulse" />
                 <FaNodeJs className="text-green-400 opacity-10 blur-sm text-[120px] absolute bottom-16 right-12 animate-spin-slow" />
-                <FaHtml5 className="text-orange-400 opacity-10 blur-sm text-[100px] absolute top-1/3 left-2/3 animate-float" />
                 <SiTailwindcss className="text-sky-400 opacity-10 blur-sm text-[120px] absolute bottom-28 left-1/4 animate-float" />
                
             </div>
@@ -45,10 +46,7 @@ const Hero = () => {
                             </h6>
                         </div>
                         <h1 className='text-2xl md:text-3xl lg:text-5xl dark:text-white font-bold'>Front-end Developer</h1>
-                        {/* <p className='text-gray-400 w-5/6 md:w-5/6'>I build interactive, visually polished web experiences using React, JavaScript,
-                        TypeScript, and modern frontend frameworks — blending clean design with efficient
-                        code to deliver fast, user-friendly interfaces.</p> */}
-                        <div className='w-full h-[170px] md:h-[160px] relative'>
+                        <div className='w-full h-[170px] md:h-[160px] lg:h-[120px] relative'>
                             <div className='absolute top-0 left-0 w-full h-full'>
                                 <HomeDescription />
                             </div>
@@ -85,6 +83,7 @@ const Hero = () => {
                 </div>
             </section>
         </div>
+        // Hero section Ends
         
     );
 };

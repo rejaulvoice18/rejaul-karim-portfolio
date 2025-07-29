@@ -9,6 +9,7 @@ import SectionTitle from '../../../components/SectionTitle';
 
 const AboutMe = () => {
     return (
+        // About Section Start 
         <section id='about' className='pt-20 bg-white dark:bg-black'>
             <div className='max-w-screen-xl mx-auto space-y-10 px-3'>
                <SectionTitle
@@ -166,6 +167,7 @@ const AboutMe = () => {
                 </div>
             </div>
         </section>
+        // About Section Ends
     );
 };
 

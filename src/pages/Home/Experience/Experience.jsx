@@ -6,6 +6,7 @@ import ExperienceTimeline from '../../../components/ExperienceTimeline';
 
 const Experience = () => {
     return (
+        // Experience Section Start
         <section id='experience' className='bg-gray-100 dark:bg-gray-800'>
             <div className='py-14'>
                 <SectionTitle
@@ -18,6 +19,7 @@ const Experience = () => {
                 </div>
             </div>
         </section>
+        // Experience Section Ends
     );
 };
 
