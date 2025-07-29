@@ -19,4 +19,50 @@ A modern and fully responsive developer portfolio website built with **React.js*
 
 ## 📁 Folder Structure
 
+src/
+├── assets/ # Images, icons
+├── components/ # Reusable components like Navbar, Footer, etc.
+├── pages/ # Home, About, Projects, Contact
+├── hooks/ # Custom React hooks
+├── data/ # Stored data
+└── main.jsx # Main App wrapper
+
+
+---
+
+## 📬 Contact Feature
+
+The **Contact Me** form is powered by [EmailJS](https://www.emailjs.com/), allowing users to send messages without backend configuration.
+
+### ✅ Real-time Message Handling:
+- No page reloads.
+- Instant notifications for incoming client messages.
+- Easy to configure for new email services.
+
+---
+
+---
+
+## 🌐 Deployment
+
+You can deploy this portfolio using:
+
+- **Vercel**
+- **Netlify**
+- **Firebase Hosting**
+- Or any static hosting service
+
+---
+
+## 🛠️ Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/rejaulvoice18/rejaul-karim-portfolio.git
+cd rejaul-karim-portfolio
+npm install
+npm run dev
+
+
 
