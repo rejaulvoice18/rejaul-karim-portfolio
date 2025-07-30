@@ -1,5 +1,5 @@
 import React from 'react';
-import picture from '../assets/rejaul-karim.png'
+import picture from '../assets/rejaul_karimfr.png'
 import { motion } from 'motion/react'
 const Photo = () => {
     const circleColors = ["#6b21a8" , "#db2777"];
