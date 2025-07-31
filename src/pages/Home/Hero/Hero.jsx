@@ -29,7 +29,7 @@ const Hero = () => {
         <div id='home' className='dark:bg-black/90 bg-[#fff0fb] relative overflow-hidden min-h-screen'>
             {/* Floating Background Icons */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <FaReact className="text-cyan-400 opacity-10 blur-sm text-[140px] absolute top-1/3 left-2/3 animate-pulse" />
+                <FaReact className="text-cyan-400 opacity-10 blur-sm text-[140px] absolute top-20 left-2/3 animate-pulse" />
                 <TbBrandJavascript className="text-orange-400 opacity-10 blur-sm text-[100px] absolute top-20 left-20  animate-pulse" />
                 <FaNodeJs className="text-green-400 opacity-10 blur-sm text-[120px] absolute bottom-16 right-12 animate-spin-slow" />
                 <SiTailwindcss className="text-sky-400 opacity-10 blur-sm text-[120px] absolute bottom-28 left-1/4 animate-float" />
@@ -74,8 +74,8 @@ const Hero = () => {
                         <Photo />
                     </div>
                 </div>
-                <div className='-mt-28 pb-16 text-sm space-y-4 dark:text-gray-400 flex-col justify-items-center'>
-                    <p>Scroll to explore</p>
+                <div className='-mt-28 pb-16 text-sm space-y-4 dark:text-gray-400 flex-col justify-items-center text-center'>
+                    <p className='flex-col justify-items-center text-center'>Scroll to explore</p>
                     <div className="relative h-16">
                         <FaArrowDown className="text-pink-700 absolute left-1/2 -translate-x-1/2 animate-bounce scale-125" />
                     </div>
